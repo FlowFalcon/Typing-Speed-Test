@@ -1,0 +1,67 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #1e1e1e;
+    color: white;
+    background: url('bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+h1, h3 {
+    color: rgb(14, 146, 255);
+}
+
+/* Glow effect for text */
+.glow-text {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 
+                 0 0 20px rgba(255, 255, 255, 0.4), 
+                 0 0 30px rgba(255, 255, 255, 0.3), 
+                 0 0 40px rgba(255, 255, 255, 0.2);
+}
+.glow-text2 {
+    color: rgb(3, 154, 255);
+    text-shadow: 0 0 10px rgba(21, 24, 207, 0.2),
+                 0 0 20px rgba(21, 24, 207, 0.2),
+                 0 0 30px rgba(21, 24, 207, 0.2),
+                 0 0 40px rgba(21, 24, 207, 0.2);
+}
+/* Glow effect for containers */
+.glow-box {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(1, 1, 25);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
+                0 0 40px rgba(21, 24, 207, 0.2),
+                0 0 60px rgba(21, 24, 207, 0.2);
+}
+
+/* Glow effect for inputs and buttons */
+.glow-input, .glow-button, .glow-select {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    background-color: rgba(21, 24, 207, 0.2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.glow-button:hover, .glow-select:hover, .glow-input:focus {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+                0 0 40px rgba(255, 255, 255, 0.4);
+    background-color: rgb(13, 15, 138, 0.2);
+}
+
+/* Timer color */
+#timer {
+    margin-top: 10px;
+}

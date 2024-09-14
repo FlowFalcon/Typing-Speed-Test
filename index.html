@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Effect Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="glow-text2">Typing Speed Test</h1>
+
+    <div class="container glow-box">
+        <button id="startButton" class="glow-button">Start</button>
+        <select id="modeSelector" class="glow-select">
+            <option value="easy">Easy (Short words)</option>
+            <option value="hard">Hard (Long words)</option>
+            <option value="sentence">Sentences</option>
+        </select>
+    </div>
+
+    <div id="gameContainer" class="glow-box">
+        <div id="word" class="glow-text"></div>
+        <input type="text" id="inputField" class="glow-input" disabled placeholder="Start typing..." onpaste="return false;">
+        <div id="timer" class="glow-text">Time: 0s</div>
+    </div>
+
+    <div id="leaderboard" class="glow-box">
+        <h3 class="glow-text">Leaderboard</h3>
+        <ul id="leaderboardList" class="glow-text"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
